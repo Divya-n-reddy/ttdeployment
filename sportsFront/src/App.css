@@ -1,0 +1,124 @@
+body {
+  background: #f5f1eb;
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+/* AUTH BOX */
+.auth-container {
+  width: 320px;
+  margin: 100px auto;
+  padding: 30px;
+  background: #5c4033;
+  color: white;
+  border-radius: 10px;
+  text-align: center;
+
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 0.5s ease;
+}
+
+/* INPUT */
+input {
+  margin: 10px;
+  padding: 10px;
+  width: 90%;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+
+  transition: 0.3s;
+}
+
+input:focus {
+  box-shadow: 0 0 5px #d2b48c;
+}
+
+/* BUTTON */
+button {
+  background: linear-gradient(135deg, #d2b48c, #c19a6b);
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  border: none;
+  font-weight: bold;
+  font-size: 14px;
+
+  transition: all 0.3s ease;
+}
+
+/* HOVER */
+button:hover {
+  transform: translateY(-2px) scale(1.03);
+  background: linear-gradient(135deg, #c19a6b, #a67c52);
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* CLICK */
+button:active {
+  transform: scale(0.96);
+}
+
+/* DISABLED */
+button:disabled {
+  background: #ccc;
+  color: #666;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+/* DASHBOARD */
+.dashboard {
+  padding: 20px;
+}
+
+/* HEADER */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* EVENT GRID */
+.event-grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* CARD */
+.card {
+  background: #8b5e3c;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 250px;
+
+  box-shadow: 0 8px 15px rgba(0,0,0,0.25);
+  transition: all 0.3s ease;
+}
+
+/* CARD HOVER */
+.card:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.35);
+}
+
+/* BUTTON INSIDE CARD */
+.card button {
+  width: 100%;
+  margin-top: 10px;
+}
+
+/* ANIMATION */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
