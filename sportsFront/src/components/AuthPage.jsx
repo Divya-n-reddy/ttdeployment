@@ -20,7 +20,7 @@ function AuthPage({ setUser }) {
     try {
       if (isLogin) {
         const res = await axios.post(
-          "http://localhost:8081/api/users/login",
+          "https://ttdeployment-s3co.onrender.com/api/users/login",
           {
             username: form.username,
             password: form.password
@@ -30,7 +30,7 @@ function AuthPage({ setUser }) {
         alert(`Welcome ${res.data.role}`);
         setUser(res.data);
       } else {
-        let url = "http://localhost:8081/api/users/register";
+        let url = "https://ttdeployment-s3co.onrender.com/api/users/register";
 
         if (adminSecret) {
           url += `?adminSecret=${adminSecret}`;
