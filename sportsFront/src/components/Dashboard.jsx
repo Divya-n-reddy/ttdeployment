@@ -7,7 +7,7 @@ function Dashboard({ user, setUser, setPage }) {
 
   useEffect(() => {
     axios
-      .get("http://localhost:8081/api/events")
+      .get("https://ttdeployment-s3co.onrender.com/api/events")
       .then((res) => setEvents(res.data));
   }, []);
 
