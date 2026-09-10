@@ -7,7 +7,7 @@ function ViewBookings({ user, setPage }) {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:8081/api/events/admin/bookings/${user.id}`)
+      .get(`https://ttdeployment-s3co.onrender.com/api/events/admin/bookings/${user.id}`)
       .then((res) => setBookings(res.data))
       .catch(() => alert("Error fetching bookings"));
   }, []);
