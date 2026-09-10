@@ -31,7 +31,7 @@ function CreateEvent({ user, setPage }) {
       console.log("Sending data:", payload); // 🔍 Debug
 
       await axios.post(
-        `http://localhost:8081/api/events/create/${user.id}`,
+        `https://ttdeployment-s3co.onrender.com/api/events/create/${user.id}`,
         payload
       );
 
