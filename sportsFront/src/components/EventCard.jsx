@@ -15,7 +15,7 @@ function EventCard({ event, user, setPage }) {
   const bookEvent = async () => {
     try {
       const res = await axios.post(
-        `http://localhost:8081/api/events/${event.id}/book/${user.id}`
+        `https://ttdeployment-s3co.onrender.com/api/events/${event.id}/book/${user.id}`
       );
 
       alert(res.data); // ✅ show backend message
